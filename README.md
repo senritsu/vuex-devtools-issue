@@ -1,5 +1,7 @@
 # vuex-devtools-issue
 
+[![https://gfycat.com/madhollowhawk](https://thumbs.gfycat.com/MadHollowHawk-size_restricted.gif)](https://gfycat.com/madhollowhawk)
+
 ## Project setup
 ```
 npm install
