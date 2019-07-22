@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ counter }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,6 +35,17 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  computed: {
+    counter () {
+      return this.$store.state.counter
+    }
+  },
+  created () {
+    this.interval = setInterval(() => this.$store.commit('increment'), 1000)
+  },
+  beforeDestroy () {
+    clearInterval(this.interval)
   }
 }
 </script>
